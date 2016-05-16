@@ -1,3 +1,11 @@
 dependencies:
   override:
+    - chmod +x bin/*
+    - ./bin/clean.sh
     - ./bin/build.sh
+
+deployment:
+  master:
+    branch: [test, master]
+    commands:
+      - ./bin/deploy.sh $CIRCLE_BRANCH
