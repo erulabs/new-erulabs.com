@@ -1,8 +1,8 @@
 $script = <<SCRIPT
 apt update
-apt install -y python-pip git libffi-dev
+apt install -y python-pip git libffi-dev libssl-dev
 pip install --upgrade pip
-pip install paramiko PyYAML Jinja2 httplib2 six
+pip install paramiko PyYAML Jinja2 httplib2 six pycrypto
 git clone git://github.com/ansible/ansible.git --recursive
 echo "source /home/vagrant/ansible/hacking/env-setup" >> ~/.bashrc
 echo "export PATH=/home/vagrant/ansible/bin/:$PATH" >> ~/.bashrc
