@@ -15,7 +15,7 @@ dependencies:
     - echo $VAULT_SECRET > .secret
     - ./bin/vault.sh decrypt secrets/account.json.secret > secrets/account.json.plain
     - ./bin/clean.sh
-    - npm install --dev
+    - npm install
     - ./bin/build.sh
 
 test:
