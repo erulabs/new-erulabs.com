@@ -15,9 +15,6 @@ dependencies:
     - ./bin/vault.sh decrypt secrets/account.json.secret > secrets/account.json.plain
     - ./bin/clean.sh
     - ./bin/build.sh
-  post:
-    - rm -r .secret
-    - rm -r secrets/*.plain
 
 test:
   override:
