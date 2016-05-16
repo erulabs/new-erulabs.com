@@ -1,20 +1,22 @@
-resource "google_compute_instance" "default" {
-  name         = "test"
+resource "google_compute_address" "erulabs" {
+  name = "erulabs"
+}
+
+resource "google_compute_instance" "erulabs" {
+  name         = "erulabs"
   machine_type = "n1-standard-1"
   zone         = "us-central1-a"
 
   disk {
     image = "ubuntu-1604-xenial-v20160429"
-  }
-
-  disk {
     type = "pd-standard"
+    size = 30
   }
 
   network_interface {
     network = "default"
     access_config {
-      // Ephemeral IP#
+      nat_ip = "${google_compute_address.erulabs.address}"
     }
   }
 
