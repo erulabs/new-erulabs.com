@@ -4,6 +4,10 @@ dependencies:
     - ./bin/clean.sh
     - ./bin/build.sh
 
+test:
+  override:
+    - ./bin/test.sh
+
 deployment:
   master:
     branch: [test, master]
