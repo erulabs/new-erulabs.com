@@ -1,0 +1,14 @@
+{
+  "posts": [
+    {
+      "file": "Welcome_to_Erulabs.com",
+      "date": 1439322281157,
+      "preview": "Well, for potentially the 10th time, I've relaunched Erulabs.com (aka SeandonMooy.com). Read the article for details on this particular build!"
+    },
+    {
+      "file": "Who_am_I",
+      "date": 1439322930169,
+      "preview": "I am Seandon Mooy, a DevOps engineer who loves Docker, Chef, Kubernetes, Ruby, Javascript and GO. I am available for DevOps consulting - just reach out to me via any of the contact icons on the top right!"
+    }
+  ]
+}

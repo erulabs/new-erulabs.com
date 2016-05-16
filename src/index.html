@@ -1,1 +1,49 @@
-Hello World!
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SeandonMooy.com</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/vendor.css" type="text/css">
+    <link rel="stylesheet" href="assets/bundle.css" type="text/css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div class="ui top fixed inverted menu">
+      <a href="/" class="local-link item title">SeandonMooy.com</a>
+      <div class="right menu">
+        <div class="ui right aligned item">
+          <a title="Email me at seandon.mooy@gmail.com!" href="mailto:seandon.mooy@gmail.com" target="_blank" class="social-link"><i class="fa fa-at"></i></a>
+          <a title="GitHub.com/erulabs" href="https://github.com/erulabs" target="_blank" class="social-link"><i class="fa fa-github"></i></a>
+          <a title="Twitter @erulabs" href="https://twitter.com/erulabs" target="_blank" class="social-link"><i class="fa fa-twitter"></i></a>
+          <a title="ig: @seandonmooy" href="https://instagram.com/seandonmooy/" target="_blank" class="social-link"><i class="fa fa-instagram"></i></a>
+          <a title="LinkedIn" href="https://www.linkedin.com/in/seandonmooy/" target="_blank" class="social-link"><i class="fa fa-linkedin"></i></a>
+        </div>
+        <a href="/resume" class="local-link ui right aligned item">Resume</a>
+      </div>
+    </div>
+    <div class="site-container" id="site-body"></div>
+    <div class="homepage-hero-module">
+      <div class="video-container">
+        <!--<div class="filter"></div>-->
+        <video id="fullscreenVid" autoplay preload loop class="fillWidth">
+          <source src="assets/Hello-World.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+          <source src="assets/Hello-World.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
+        </video>
+        <div class="poster hidden">
+          <img src="assets/Hello-World.jpg" alt="">
+        </div>
+      </div>
+    </div>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-61925008-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script async type="text/javascript" src="assets/bundle.js"></script>
+  </body>
+</html>
