@@ -9,7 +9,7 @@ dependencies:
     - pip install ansible
     - wget https://releases.hashicorp.com/terraform/0.6.16/terraform_0.6.16_linux_amd64.zip
     - unzip terraform_0.6.16_linux_amd64.zip -d /home/ubuntu/bin
-    - echo "$VAULT_SECRET" > .secret
+    - echo $VAULT_SECRET > .secret
   override:
     - chmod +x bin/*
     - ./bin/vault.sh decrypt secrets/account.json.secret > secrets/account.json.plain
