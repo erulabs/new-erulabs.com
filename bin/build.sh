@@ -1,4 +1,4 @@
 #!/bin/bash
 
-mkdir -p _build
-cp -r src/* _build/
+./node_modules/.bin/gulp clean
+./node_modules/.bin/gulp
